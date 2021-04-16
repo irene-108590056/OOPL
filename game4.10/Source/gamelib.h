@@ -294,11 +294,21 @@ public:
 	virtual void OnInit() {}								// 狀態的初值及圖形設定
 	virtual void OnKeyDown(UINT, UINT, UINT) {}				// 處理鍵盤Down的動作
 	virtual void OnKeyUp(UINT, UINT, UINT) {}				// 處理鍵盤Up的動作
-	virtual void OnLButtonDown(UINT nFlags, CPoint point) {}// 處理滑鼠的動作
-	virtual void OnLButtonUp(UINT nFlags, CPoint point) {}	// 處理滑鼠的動作
-	virtual void OnMouseMove(UINT nFlags, CPoint point) {}  // 處理滑鼠的動作 
-	virtual void OnRButtonDown(UINT nFlags, CPoint point) {}// 處理滑鼠的動作
-	virtual void OnRButtonUp(UINT nFlags, CPoint point) {}	// 處理滑鼠的動作
+	virtual void OnLButtonDown(UINT nFlags, CPoint point) {
+	
+	}
+	virtual void OnLButtonUp(UINT nFlags, CPoint point) {
+	
+	}
+	virtual void OnMouseMove(UINT nFlags, CPoint point) {
+	
+	}   
+	virtual void OnRButtonDown(UINT nFlags, CPoint point) {
+	
+	}
+	virtual void OnRButtonUp(UINT nFlags, CPoint point) {
+	
+	}	
 protected:
 	void GotoGameState(int state);							// 跳躍至指定的state
 	void ShowInitProgress(int percent);						// 顯示初始化的進度
