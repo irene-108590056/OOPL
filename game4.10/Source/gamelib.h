@@ -231,7 +231,6 @@ public:
 	void  OnMove();					// 依頻率更換bitmap
 	void  OnShow();					// 將動畫貼到螢幕
 	void  Reset();					// 重設播放順序回到第一張圖形
-	void  SetCycle(bool);
 	void  SetDelayCount(int);		// 設定動畫播放速度的常數(越大越慢)
 	void  SetTopLeft(int,int);		// 將動畫的左上角座標移至 (x,y)
 	int   Top();					// 取得動畫的左上角的 y 座標
@@ -294,21 +293,11 @@ public:
 	virtual void OnInit() {}								// 狀態的初值及圖形設定
 	virtual void OnKeyDown(UINT, UINT, UINT) {}				// 處理鍵盤Down的動作
 	virtual void OnKeyUp(UINT, UINT, UINT) {}				// 處理鍵盤Up的動作
-	virtual void OnLButtonDown(UINT nFlags, CPoint point) {
-	
-	}
-	virtual void OnLButtonUp(UINT nFlags, CPoint point) {
-	
-	}
-	virtual void OnMouseMove(UINT nFlags, CPoint point) {
-	
-	}   
-	virtual void OnRButtonDown(UINT nFlags, CPoint point) {
-	
-	}
-	virtual void OnRButtonUp(UINT nFlags, CPoint point) {
-	
-	}	
+	virtual void OnLButtonDown(UINT nFlags, CPoint point) {}// 處理滑鼠的動作
+	virtual void OnLButtonUp(UINT nFlags, CPoint point) {}	// 處理滑鼠的動作
+	virtual void OnMouseMove(UINT nFlags, CPoint point) {}  // 處理滑鼠的動作 
+	virtual void OnRButtonDown(UINT nFlags, CPoint point) {}// 處理滑鼠的動作
+	virtual void OnRButtonUp(UINT nFlags, CPoint point) {}	// 處理滑鼠的動作
 protected:
 	void GotoGameState(int state);							// 跳躍至指定的state
 	void ShowInitProgress(int percent);						// 顯示初始化的進度

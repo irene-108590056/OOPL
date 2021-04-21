@@ -59,8 +59,6 @@
 #include <string.h>
 #include "gamelib.h"
 #include "audio.h"
-#include <string>
-
 
 namespace game_framework {
 
@@ -167,8 +165,7 @@ void CAudio::MCIThread(HANDLE hRead)
 				// TRACE("Received: %s\n", ptr+1);
 				ExecuteMciCommand(ptr+1);
 				ptr += (i + 1);	// advance to the next command
-			} 
-			else {
+			} else {
 				// The command does not end with ']'. Copy the incomplete commmand to 
 				//   the head of buf[] and set ptr to the point to be read again.
 				memcpy(buf, ptr, ptr_end - ptr);

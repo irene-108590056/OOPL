@@ -1,0 +1,15 @@
+.Addbitmap --> gerak gambar
+memory leak --> create destructor (~)
+LoadBitmap --> harus dari folder (cth : Bitmaps\\rec.bmp)
+AddBitmap --> jadiin animation (IDB)
+show bitmap --> .OnShow() (kalau gambar gerak)
+show bitmap gambar tetap --> .ShowBitmap() (gambar tetap)
+
+onKeyDown --> pas tekan 
+onKeyUp--> lepas tekan
+onLButtonDown --> tekan mouse
+onLButtonUp --> lepas mouse
+
+
+bdw --> ppt arti arti
+rumus di ppt

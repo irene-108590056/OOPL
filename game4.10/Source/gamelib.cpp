@@ -124,7 +124,6 @@
 #include "audio.h"
 #include "gamelib.h"
 #include "mygame.h"
-#include <string>
 
 namespace game_framework {
 
@@ -202,11 +201,6 @@ void CAnimation::Reset()
 	delay_counter = delay_count;
 	bmp_iter = bmp.begin();
 	bmp_counter = 0;
-}
-
-void CAnimation::SetCycle(bool cycle)
-{
-	this->cycle = cycle;
 }
 
 void CAnimation::SetDelayCount(int dc)
