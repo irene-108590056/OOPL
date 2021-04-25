@@ -323,13 +323,42 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\Downloads\NES - Super Mario Bros - Title Screen Game Over Screens and HUD (2).png" />
     <Image Include="..\..\NES - Super Mario Bros - Title Screen Game Over Screens and HUD (2).png" />
+    <Image Include="Bitmaps\11.bmp" />
+    <Image Include="Bitmaps\blockq_0.bmp" />
+    <Image Include="Bitmaps\blockq_1.bmp" />
+    <Image Include="Bitmaps\blockq_2.bmp" />
+    <Image Include="Bitmaps\blockq_used.bmp" />
+    <Image Include="Bitmaps\font\a.bmp" />
+    <Image Include="Bitmaps\font\b.bmp" />
+    <Image Include="Bitmaps\font\c.bmp" />
+    <Image Include="Bitmaps\font\d.bmp" />
+    <Image Include="Bitmaps\font\e.bmp" />
+    <Image Include="Bitmaps\font\f.bmp" />
+    <Image Include="Bitmaps\font\g.bmp" />
+    <Image Include="Bitmaps\font\h.bmp" />
+    <Image Include="Bitmaps\font\i.bmp" />
+    <Image Include="Bitmaps\font\j.bmp" />
+    <Image Include="Bitmaps\font\k.bmp" />
+    <Image Include="Bitmaps\font\l.bmp" />
+    <Image Include="Bitmaps\font\m.bmp" />
+    <Image Include="Bitmaps\font\n.bmp" />
+    <Image Include="Bitmaps\font\o.bmp" />
+    <Image Include="Bitmaps\font\p.bmp" />
+    <Image Include="Bitmaps\font\q.bmp" />
+    <Image Include="Bitmaps\font\r.bmp" />
+    <Image Include="Bitmaps\font\s.bmp" />
+    <Image Include="Bitmaps\font\t.bmp" />
+    <Image Include="Bitmaps\font\u.bmp" />
+    <Image Include="Bitmaps\font\v.bmp" />
+    <Image Include="Bitmaps\font\w.bmp" />
+    <Image Include="Bitmaps\font\x.bmp" />
+    <Image Include="Bitmaps\font\y.bmp" />
+    <Image Include="Bitmaps\font\z.bmp" />
     <Image Include="Bitmaps\mario\mario.bmp" />
     <Image Include="Bitmaps\mario\mario_move0.bmp" />
     <Image Include="Bitmaps\mario\mario_move1.bmp" />
-    <Image Include="RES\0.bmp" />
-    <Image Include="RES\1.bmp" />
-    <Image Include="RES\2.bmp" />
     <Image Include="RES\3.bmp" />
     <Image Include="RES\4.bmp" />
     <Image Include="RES\4.png" />
@@ -339,7 +368,10 @@
     <Image Include="RES\8.bmp" />
     <Image Include="RES\9.bmp" />
     <Image Include="res\bitmap3.bmp" />
+    <Image Include="RES\one.bmp" />
     <Image Include="RES\super_mario_bros.bmp" />
+    <Image Include="RES\two.bmp" />
+    <Image Include="RES\zero.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -190,15 +190,6 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\..\NES - Super Mario Bros - Title Screen Game Over Screens and HUD (2).png" />
-    <Image Include="RES\0.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="RES\1.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="RES\2.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="RES\3.bmp">
       <Filter>Resource Files</Filter>
     </Image>
@@ -219,6 +210,109 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="RES\9.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\blockq_0.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\blockq_1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\blockq_2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\blockq_used.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\zero.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\one.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="RES\two.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\Downloads\NES - Super Mario Bros - Title Screen Game Over Screens and HUD (2).png" />
+    <Image Include="Bitmaps\font\a.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\b.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\c.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\d.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\e.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\f.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\g.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\h.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\i.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\j.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\k.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\l.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\m.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\n.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\o.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\p.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\q.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\r.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\s.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\t.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\u.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\v.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\w.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\x.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\y.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\font\z.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Bitmaps\11.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

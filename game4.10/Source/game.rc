@@ -128,33 +128,95 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 IDR_MAINFRAME           BITMAP                  "..\\res\\Toolbar.bmp"
 
-IDB_BACKGROUND          BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\super_mario_bros.bmp"
+IDB_BACKGROUND          BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\super_mario_bros.bmp"
 
-IDB_ERASER1             BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\Bitmaps\\mario\\mario.bmp"
+IDB_ERASER1             BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\mario\\mario.bmp"
 
-IDB_ERASER2             BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\Bitmaps\\mario\\mario_move0.bmp"
+IDB_ERASER2             BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\mario\\mario_move0.bmp"
 
-IDB_ERASER3             BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\Bitmaps\\mario\\mario_move1.bmp"
+IDB_ERASER3             BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\mario\\mario_move1.bmp"
 
-IDB_0                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\0.bmp"
+IDB_0                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\zero.bmp"
 
-IDB_1                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\1.bmp"
+IDB_1                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\one.bmp"
 
-IDB_2                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\2.bmp"
+IDB_2                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\two.bmp"
 
-IDB_3                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\3.bmp"
+IDB_3                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\3.bmp"
 
-IDB_4                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\4.bmp"
+IDB_4                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\4.bmp"
 
-IDB_5                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\5.bmp"
+IDB_5                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\5.bmp"
 
-IDB_6                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\6.bmp"
+IDB_6                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\6.bmp"
 
-IDB_7                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\7.bmp"
+IDB_7                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\7.bmp"
 
-IDB_8                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\8.bmp"
+IDB_8                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\8.bmp"
 
-IDB_9                   BITMAP                  "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\9.bmp"
+IDB_9                   BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\9.bmp"
+
+IDB_BRICK1              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\blockq_0.bmp"
+
+IDB_BRICK2              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\blockq_1.bmp"
+
+IDB_BRICK3              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\blockq_2.bmp"
+
+IDB_BRICK4              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\blockq_used.bmp"
+
+IDB_FONT_A              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\a.bmp"
+
+IDB_FONT_B              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\b.bmp"
+
+IDB_FONT_C              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\c.bmp"
+
+IDB_FONT_D              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\d.bmp"
+
+IDB_FONT_E              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\e.bmp"
+
+IDB_FONT_F              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\f.bmp"
+
+IDB_FONT_G              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\g.bmp"
+
+IDB_FONT_H              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\h.bmp"
+
+IDB_FONT_I              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\i.bmp"
+
+IDB_FONT_J              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\j.bmp"
+
+IDB_FONT_K              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\k.bmp"
+
+IDB_FONT_L              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\l.bmp"
+
+IDB_FONT_M              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\m.bmp"
+
+IDB_FONT_N              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\n.bmp"
+
+IDB_FONT_O              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\o.bmp"
+
+IDB_FONT_P              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\p.bmp"
+
+IDB_FONT_Q              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\q.bmp"
+
+IDB_FONT_R              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\r.bmp"
+
+IDB_FONT_S              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\s.bmp"
+
+IDB_FONT_T              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\t.bmp"
+
+IDB_FONT_U              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\u.bmp"
+
+IDB_FONT_V              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\v.bmp"
+
+IDB_FONT_W              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\w.bmp"
+
+IDB_FONT_X              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\x.bmp"
+
+IDB_FONT_Y              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\y.bmp"
+
+IDB_FONT_Z              BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\font\\z.bmp"
+
+IDB_MAP_BACKGROUND      BITMAP                  "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\Bitmaps\\11.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -317,7 +379,7 @@ END
 
 IDB_PNG1                PNG                     "C:\\Users\\Irene Zheng\\Downloads\\NES - Super Mario Bros - Title Screen Game Over Screens and HUD (2).png"
 
-IDB_PNG2                PNG                     "C:\\Users\\Irene Zheng\\Downloads\\4. Source Code_game4.10\\game4.10\\RES\\4.png"
+IDB_PNG2                PNG                     "C:\\Users\\Irene Zheng\\Desktop\\OOPL\\game4.10\\RES\\4.bmp"
 
 
 /////////////////////////////////////////////////////////////////////////////

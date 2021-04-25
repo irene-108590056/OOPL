@@ -66,8 +66,8 @@
 // 定義遊戲可設定的環境與條件
 /////////////////////////////////////////////////////////////////////////////
 
-#define SIZE_X				 640		// 設定遊戲畫面的解析度為640x480
-#define SIZE_Y				 480		// 註：若不使用標準的解析度，則不能切換到全螢幕
+#define SIZE_X				 680 //]定遊戲畫面的解析度為640x480
+#define SIZE_Y				 480  //龤G若不使用標準的解析度，則不能切換到全螢幕
 #define OPEN_AS_FULLSCREEN	 false		// 是否以全螢幕方式開啟遊戲
 #define SHOW_LOAD_PROGRESS   true		// 是否顯示loading(OnInit)的進度
 #define DEFAULT_BG_COLOR	 RGB(0,0,0)	// 遊戲畫面預設的背景顏色(黑色)
@@ -75,6 +75,9 @@
 #define SHOW_GAME_CYCLE_TIME false		// 是否在debug mode顯示cycle time
 #define ENABLE_GAME_PAUSE	 true		// 是否允許以 Ctrl-Q 暫停遊戲
 #define ENABLE_AUDIO		 true		// 啟動音效介面
+#define DEFAULT_BG_ALPHA	RGB(255,0,255)	// Set the default Background Alpha to (255,0,255)
+#define DEFAULT_SCALE		SIZE_X/320	//
+
 
 /////////////////////////////////////////////////////////////////////////////
 // 定義CGame及CGameState所使用的三個狀態常數
@@ -123,6 +126,8 @@ namespace game_framework {
 // 一般的遊戲並不需直接操作這個物件，因此可以不管這個class的使用方法
 /////////////////////////////////////////////////////////////////////////////
 
+
+
 class CSpecialEffect {
 public:
 	static void  SetCurrentTime();					// 儲存目前的時間至ctime
@@ -152,10 +157,11 @@ public:
 	static void  ReleaseBackCDC();			// 放掉Back Plain的DC (device context)
 	static bool  SetFullScreen(bool);		// 設定為全螢幕模式/視窗模式
 	static bool  IsFullScreen();			// 回答是否為全螢幕模式/視窗模式
+
 private:
 	CDDraw();								// private constructor
 	static void  BltBitmapToBack(unsigned SurfaceID, int x, int y);
-	static void  BltBitmapToBack(unsigned SurfaceID, int x, int y, double factor);
+	static void  BltBitmapToBack(unsigned SurfaceID, int x, int y, double factor, bool flip=false);
 	static void  BltBitmapToBitmap(unsigned SourceID, unsigned TargetID, int x, int y);
 	static void	 CheckDDFail(char *s);
 	static bool  CreateSurface();
@@ -171,7 +177,7 @@ private:
 	static void  SetColorKey(unsigned SurfaceID, COLORREF color);
     static HDC					hdc;
 	static CDC					cdc;
-	static CView				*pCView;
+	static CView				
     static LPDIRECTDRAW2		lpDD;
 	static LPDIRECTDRAWCLIPPER	lpClipperPrimary;   
 	static LPDIRECTDRAWCLIPPER	lpClipperBack;   
@@ -196,16 +202,22 @@ private:
 class CMovingBitmap {
 public:
 	CMovingBitmap();
+	CMovingBitmap(int, COLOREF = DEFAULT_BG_ALPHA);
+
 	int   Height();						// 取得圖形的高度
-	int   Left();						// 取得圖形的左上角的 x 座標
+	int   Width();						// 取得圖形的寬度  
+	int   Top();						// 取得圖形的左上角的 y 座標
+	int   Left();						// 取得圖形的左上角的 x 座標  
 	void  LoadBitmap(int,COLORREF=CLR_INVALID);		// 載入圖，指定圖的編號(resource)及透明色
 	void  LoadBitmap(char *,COLORREF=CLR_INVALID);	// 載入圖，指定圖的檔名及透明色
+	void  LoadBitmap(string&, COLORREF = CLR_INVALID);
 	void  SetTopLeft(int,int);			// 將圖的左上角座標移至 (x,y)
-	void  ShowBitmap();					// 將圖貼到螢幕
+	// void  ShowBitmap();					// 將圖貼到螢幕
 	void  ShowBitmap(double factor);	// 將圖貼到螢幕 factor < 1時縮小，>1時放大。注意：需要VGA卡硬體的支援，否則會很慢
 	void  ShowBitmap(CMovingBitmap &);	// 將圖貼到到另一張圖上 (僅供特殊用途)
-	int   Top();						// 取得圖形的左上角的 y 座標
-	int   Width();						// 取得圖形的寬度
+
+	bool isload();
+
 protected:
 	CRect    location;			// location of the bitmap
 	bool     isBitmapLoaded;	// whether a bitmap has been loaded
@@ -220,21 +232,23 @@ protected:
 class CAnimation {
 public:
 	CAnimation(int=10);				// Constructor (預設動畫播放頻率每1/3秒換一張圖)
-	void  AddBitmap(int,COLORREF=CLR_INVALID);
+	void  AddBitmap(int,COLORREF= DEFAULT_BG_ALPHA);
 									// 增加一張圖形至動畫(圖的編號及透明色)
-	void  AddBitmap(char *,COLORREF=CLR_INVALID);
+	void  AddBitmap(char *,COLORREF= DEFAULT_BG_ALPHA);
 									// 增加一張圖形至動畫(圖的編號及透明色)
 	int   GetCurrentBitmapNumber();	// 取得正在撥放的bitmap是第幾個bitmap
 	int   Height();					// 取得動畫的高度
+	int   Width();					// 取得動畫的寬度
 	bool  IsFinalBitmap();			// 回傳正在撥放的bitmap是否為最後一個bitmap
+	int   Top();					// 取得動畫的左上角的 y 座標
 	int   Left();					// 取得動畫的左上角的 x 座標
 	void  OnMove();					// 依頻率更換bitmap
-	void  OnShow();					// 將動畫貼到螢幕
+	// void  OnShow();					// 將動畫貼到螢幕
+	void  OnShow(double scale = DEFAULT_SCALE, bool flip = false);
 	void  Reset();					// 重設播放順序回到第一張圖形
 	void  SetDelayCount(int);		// 設定動畫播放速度的常數(越大越慢)
 	void  SetTopLeft(int,int);		// 將動畫的左上角座標移至 (x,y)
-	int   Top();					// 取得動畫的左上角的 y 座標
-	int   Width();					// 取得動畫的寬度
+
 private:
 	list<CMovingBitmap>				bmp;			// list of CMovingBitmap
 	list<CMovingBitmap>::iterator	bmp_iter;		// list iterator
@@ -251,20 +265,39 @@ private:
 
 class CInteger {
 public:
-	CInteger(int=5);			// default 5 digits
+	CInteger(int=1);			// default 5 digits
 	void Add(int n);			// 增加整數值
 	int  GetInteger();			// 回傳整數值
 	void LoadBitmap();			// 載入0..9及負號之圖形
 	void SetInteger(int);		// 設定整數值
 	void SetTopLeft(int,int);	// 將動畫的左上角座標移至 (x,y)
-	void ShowBitmap();			// 將動畫貼到螢幕
+	void ShowBitmap(double factor = DEFAULT_SCALE);			// 將動畫貼到螢幕
+
 private:
-	const int NUMDIGITS;			// 共顯示NUMDIGITS個位數
-	static CMovingBitmap digit[11]; // 儲存0..9及負號之圖形(bitmap)
+	const int NUMDIGITS = 0;			// 共顯示NUMDIGITS個位數
+	static CMovingBitmap digit[10]; // 儲存0..9及負號之圖形(bitmap)
 	int x, y;						// 顯示的座標
 	int n;							// 整數值
 	bool isBmpLoaded;				// 是否已經載入圖形
 };
+
+class CString {
+public:
+	CString();			// default 5 digits
+	CMovingBitmap* GetAlphabet();			// 回傳整數值
+	void LoadBitmap();			// 載入A..Z之圖形
+	void SetTopLeft(int, int);	// 將動畫的左上角座標移至 (x,y)
+	void ShowBitmap(string, double factor = DEFAULT_SCALE);			// 將動畫貼到螢幕
+	bool isFocus();
+	void SetFocus(bool);
+
+private:
+	static CMovingBitmap alphabet[52];	// 儲存A..Z之圖形(bitmap)
+	int x, y;							// 顯示的座標
+	bool focus;
+	bool isBmpLoaded;					// 是否已經載入圖形
+};
+
 
 /////////////////////////////////////////////////////////////////////////////
 // 宣告尚未定義的class
@@ -272,6 +305,7 @@ private:
 
 class CGame;
 class CGameStateInit;
+class CGameStateStart;
 class CGameStateRun;
 class CGameStateOver;
 
@@ -301,6 +335,9 @@ public:
 protected:
 	void GotoGameState(int state);							// 跳躍至指定的state
 	void ShowInitProgress(int percent);						// 顯示初始化的進度
+	bool ButtonOnClick(const CPoint& point, CMovingBitmap& button);
+	bool ButtonOnClick(const CPoint& point, CAnimation& button);
+	void ShowInitProgress(int percent);
 	//
 	// virtual functions, 由繼承者提供implementation
 	//
@@ -337,6 +374,7 @@ public:
 	void OnSuspend();								// 處理「待命」的動作
 	void SetGameState(int);
 	static CGame *Instance();
+
 private:
 	bool			running;			// 遊戲是否正在進行中(未被Pause)
 	bool            suspended;			// 遊戲是否被suspended
