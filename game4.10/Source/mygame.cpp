@@ -31,15 +31,14 @@ void CGameStateInit::OnInit()
 	// Loading Images
 	stringHandler.LoadBitmap();
 
-	// Intro
+	// Background
+	background1.LoadBitmap(IDB_MAP_BACKGROUND);
+
+// BRICKS
 	intro.AddBitmap(IDB_BRICK1);
 	intro.AddBitmap(IDB_BRICK2);
 	intro.AddBitmap(IDB_BRICK3);
 	intro.AddBitmap(IDB_BRICK4);
-	intro.SetDelayCount(3);				// 放慢，以便看清楚進度，實際遊戲請刪除此Sleep
-
-	// Background
-	background1.LoadBitmap(IDB_BACKGROUND);
 	
 	//
 	// 此OnInit動作會接到CGameStaterRun::OnInit()，所以進度還沒到100%
